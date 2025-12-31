@@ -2,176 +2,184 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>Fazel Shah | DevOps Engineer</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Fazel Shah | DevOps & Security Lead</title>
+
+  <!-- SEO -->
+  <meta name="description" content="Fazel Shah – DevOps & Security Lead with expertise in AWS, Kubernetes, EKS, Helm, CI/CD, GitHub Actions, and Cloud Security." />
+  <meta name="keywords" content="DevOps Engineer, Cloud Engineer, AWS, Kubernetes, EKS, Helm, GitHub Actions, Security, SRE" />
+  <meta name="author" content="Fazel Shah" />
+
+  <!-- Google Analytics (replace GA_MEASUREMENT_ID later) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=GA_MEASUREMENT_ID"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);} 
+    gtag('js', new Date());
+    gtag('config', 'GA_MEASUREMENT_ID');
+  </script>
+
   <style>
+    :root {
+      --bg: #0f172a;
+      --card: #020617;
+      --text: #e5e7eb;
+      --muted: #9ca3af;
+      --accent: #38bdf8;
+    }
+
     body {
-      font-family: Arial, Helvetica, sans-serif;
-      background: #f4f6f8;
-      color: #333;
+      margin: 0;
+      font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background: var(--bg);
+      color: var(--text);
       line-height: 1.6;
     }
+
     .container {
-      max-width: 1000px;
-      margin: 30px auto;
-      background: #ffffff;
-      padding: 30px;
-      border-radius: 6px;
+      max-width: 900px;
+      margin: auto;
+      padding: 32px 20px;
     }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 16px;
+    }
+
     h1 {
-      margin-bottom: 5px;
+      font-size: 2.2rem;
+      margin: 0;
     }
+
     h2 {
-      border-bottom: 2px solid #ddd;
-      padding-bottom: 5px;
-      margin-top: 30px;
+      margin-top: 40px;
+      border-bottom: 1px solid #1e293b;
+      padding-bottom: 8px;
+      color: var(--accent);
     }
-    .contact {
-      font-size: 14px;
-      margin-bottom: 20px;
+
+    .tagline {
+      color: var(--muted);
     }
+
+    .card {
+      background: var(--card);
+      border-radius: 16px;
+      padding: 20px;
+      margin-top: 20px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+    }
+
     ul {
-      margin: 10px 0 20px 20px;
+      padding-left: 20px;
     }
-    li {
-      margin-bottom: 6px;
+
+    a {
+      color: var(--accent);
+      text-decoration: none;
     }
-    .role {
-      font-weight: bold;
+
+    .btn {
+      background: var(--accent);
+      color: #020617;
+      padding: 10px 16px;
+      border-radius: 999px;
+      font-weight: 600;
     }
-    .company {
-      font-style: italic;
-      color: #555;
-    }
-    .date {
-      float: right;
-      color: #666;
-      font-size: 14px;
-    }
+
     footer {
       text-align: center;
-      font-size: 13px;
-      color: #777;
-      margin-top: 40px;
+      margin-top: 60px;
+      color: var(--muted);
+      font-size: 0.9rem;
     }
   </style>
 </head>
-
 <body>
   <div class="container">
-    <h1>Fazel Shah</h1>
-    <div class="contact">
-      📞 +91 7006073126 |
-      ✉️ fazelshah1@gmail.com
-    </div>
+    <header>
+      <div>
+        <h1>Fazel Shah</h1>
+        <p class="tagline">DevOps & Security Lead | Cloud & Kubernetes Specialist</p>
+        <p>📧 <a href="mailto:fazelshah1@gmail.com">fazelshah1@gmail.com</a> | 📞 +91 7006073126</p>
+      </div>
+      <a class="btn" href="resume.pdf" download>Download PDF</a>
+    </header>
 
-    <h2>Professional Summary</h2>
-    <p>
-      Skilled IT Professional with over <b>6 years of experience</b>, including
-      <b>3.5+ years in DevOps and Cloud Engineering</b>. Strong expertise in designing,
-      automating, and securing mission-critical infrastructure using AWS, GCP,
-      Kubernetes, Docker, CI/CD pipelines, and Infrastructure as Code. Proven experience
-      in EKS, Helm charts, GitHub Actions, Lambda, and cloud security best practices.
-    </p>
+    <section class="card">
+      <h2>Summary</h2>
+      <p>
+        Skilled IT professional with 6+ years of experience, including strong expertise in DevOps,
+        Cloud Infrastructure, Kubernetes, and Security. Proven experience designing and operating
+        scalable, secure platforms on AWS and GCP using EKS, Helm, GitHub Actions, Terraform,
+        and modern observability practices.
+      </p>
+    </section>
 
-    <h2>Professional Experience</h2>
+    <section class="card">
+      <h2>Experience</h2>
 
-    <p class="role">
-      DevOps & Security Lead
-      <span class="date">18 Aug 2025 – Present</span>
-    </p>
-    <p class="company">Cryptlex</p>
-    <ul>
-      <li>Designed and managed AWS infrastructure with a strong focus on security and compliance.</li>
-      <li>Built, managed, and optimized Amazon EKS clusters for production and non-production environments.</li>
-      <li>Developed and maintained Helm charts for application deployments and configuration management.</li>
-      <li>Implemented CI/CD pipelines using GitHub Actions for automated build, test, and deployment workflows.</li>
-      <li>Managed serverless workloads using AWS Lambda and integrated them with cloud-native services.</li>
-      <li>Used Lens for Kubernetes cluster visibility, debugging, and operational insights.</li>
-      <li>Implemented monitoring and observability using OpenTelemetry, Grafana, and cloud-native tools.</li>
-      <li>Worked closely with security and compliance teams to address vulnerabilities and enforce best practices.</li>
-    </ul>
+      <h3>DevOps & Security Lead – Cryptlex LLP (Aug 2025 – Present)</h3>
+      <ul>
+        <li>Leading DevOps and cloud security initiatives across AWS infrastructure.</li>
+        <li>Designed and managed production-grade EKS clusters using Helm charts.</li>
+        <li>Implemented CI/CD pipelines using GitHub Actions and Kubernetes deployments.</li>
+        <li>Worked extensively with AWS Lambda, IAM, VPC, ALB, RDS, and S3.</li>
+        <li>Improved observability using OpenTelemetry, New Relic, and Grafana.</li>
+        <li>Used Lens for Kubernetes cluster visibility and operational troubleshooting.</li>
+        <li>Strengthened security posture through IAM hardening, secrets management, and audits.</li>
+      </ul>
 
-    <p class="role">
-      CloudOps Engineer
-      <span class="date">06 Feb 2024 – 15 Aug 2025</span>
-    </p>
-    <p class="company">BQE Software Private Limited</p>
-    <ul>
-      <li>Worked extensively with AWS services including EC2, S3, RDS, CloudWatch, IAM, VPC, and Auto Scaling.</li>
-      <li>Installed and configured Jenkins for build automation and parameterized pipelines.</li>
-      <li>Developed Ansible YAML playbooks for remote server configuration.</li>
-      <li>Monitored systems using New Relic, Logz, and Redgate.</li>
-      <li>Implemented CI/CD pipelines using Git, Jenkins, Docker, and Kubernetes.</li>
-    </ul>
+      <h3>CloudOps Engineer – BQE Software (Feb 2024 – Aug 2025)</h3>
+      <ul>
+        <li>AWS services: EC2, S3, RDS, IAM, CloudWatch, Auto Scaling.</li>
+        <li>Built Jenkins pipelines and automated deployments.</li>
+        <li>Developed Ansible playbooks for server automation.</li>
+        <li>Monitoring with New Relic, Logz, and Redgate.</li>
+      </ul>
 
-    <p class="role">
-      DevOps Engineer
-      <span class="date">19 Aug 2022 – 05 Feb 2024</span>
-    </p>
-    <p class="company">GirnarCare</p>
-    <ul>
-      <li>Worked with AWS services (EC2, S3, RDS, IAM, CloudWatch, VPC, Auto Scaling).</li>
-      <li>Hands-on experience with GCP services including VM instances, buckets, and instance templates.</li>
-      <li>Led migration of servers, databases, and storage from AWS to GCP.</li>
-      <li>Designed and managed Kubernetes clusters and workloads.</li>
-      <li>Created Elasticsearch and Kibana dashboards for monitoring and analytics.</li>
-    </ul>
+      <h3>DevOps Engineer – GirnarCare (Aug 2022 – Feb 2024)</h3>
+      <ul>
+        <li>Migrated workloads from AWS to GCP.</li>
+        <li>Designed Kubernetes clusters and CI/CD pipelines.</li>
+        <li>Created Elasticsearch and Kibana dashboards.</li>
+      </ul>
+    </section>
 
-    <p class="role">
-      System Engineer
-      <span class="date">14 Feb 2022 – 10 Aug 2022</span>
-    </p>
-    <p class="company">Tata Consultancy Services</p>
-    <ul>
-      <li>Performed Linux system administration and automation using Bash scripting.</li>
-      <li>Managed user and group administration.</li>
-      <li>Handled backup scheduling, restores, and RCA documentation.</li>
-      <li>Monitored performance using Grafana and InfluxDB.</li>
-    </ul>
+    <section class="card">
+      <h2>Skills</h2>
+      <p>Docker · Kubernetes · EKS · Helm · AWS · GitHub Actions · Jenkins · Ansible · Terraform · Linux · Git</p>
+    </section>
 
-    <p class="role">
-      Associate
-      <span class="date">11 Nov 2020 – 08 Feb 2022</span>
-    </p>
-    <p class="company">Karvy Innotech</p>
-    <ul>
-      <li>Managed datacenter operations and troubleshooting for servers and networks.</li>
-      <li>Installed and managed Cisco routers, switches, and access points.</li>
-    </ul>
+    <section class="card">
+      <h2>Certifications</h2>
+      <ul>
+        <li>AWS Cloud Practitioner</li>
+        <li>Kubernetes for Absolute Beginners – Hands-on</li>
+        <li>DevOps CI/CD Projects (Jenkins, Ansible, Kubernetes)</li>
+      </ul>
+    </section>
 
-    <p class="role">
-      Network Support Executive
-      <span class="date">05 Sep 2018 – 23 Mar 2020</span>
-    </p>
-    <p class="company">Antariksh Soft Tech</p>
-    <ul>
-      <li>Configured routers and switches using RIP and OSPF.</li>
-      <li>Set up mail servers, VLANs, and basic network security.</li>
-    </ul>
-
-    <h2>Skills</h2>
-    <p>
-      Docker • Kubernetes • AWS • EKS • Helm • Jenkins • GitHub Actions • Ansible • Terraform •
-      Linux • Shell Scripting • Git • Lambda • Observability
-    </p>
-
-    <h2>Certifications</h2>
-    <ul>
-      <li>AWS Cloud Practitioner</li>
-      <li>Kubernetes for Absolute Beginners – Hands-on</li>
-      <li>DevOps Project – CI/CD with Jenkins, Ansible, Kubernetes</li>
-      <li>DevOps Fundamentals – CI/CD with AWS, Docker, Ansible, Jenkins</li>
-    </ul>
-
-    <h2>Education</h2>
-    <p>
-      <b>B.Tech in Computer Science & Engineering</b><br />
-      Kashmir University (CGPA: 7.00) | 2011 – 2015
-    </p>
+    <section class="card">
+      <h2>Next Optional Upgrades</h2>
+      <ul>
+        <li>Add a custom domain (e.g., <b>fazelshah.dev</b>)</li>
+        <li>Add a detailed <b>Projects</b> section (EKS, CI/CD pipelines, security hardening)</li>
+        <li>Add LinkedIn & GitHub icons with profile links</li>
+        <li>Convert this resume into a React / Next.js site in the future</li>
+        <li>Auto-generate a downloadable PDF resume from this HTML</li>
+      </ul>
+      <p>
+        GitHub: <a href="https://github.com/fazelshah" target="_blank">https://github.com/fazelshah</a>
+      </p>
+    </section>
 
     <footer>
-      © 2025 Fazel Shah
+      © <script>document.write(new Date().getFullYear())</script> Fazel Shah · Hosted on GitHub Pages
     </footer>
   </div>
 </body>
