@@ -3,139 +3,138 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Fazel Shah – DevOps & Cloud Security Engineer</title>
-  <meta name="description" content="Fazel Shah – DevOps & Cloud Security Engineer | AWS, Kubernetes, CI/CD, Security & Compliance" />
-
-  <!-- Tailwind CDN -->
+  <title>Fazel Shah | DevOps & Security Lead</title>
   <script src="https://cdn.tailwindcss.com"></script>
-
   <style>
     body {
-      background-color: #1c1c1c;
-      background-image: radial-gradient(rgba(255,255,255,0.05) 1px, transparent 1px);
-      background-size: 24px 24px;
+      background-color: #121212;
+      background-image: linear-gradient(rgba(255,255,255,0.03) 1px, transparent 1px),
+                        linear-gradient(90deg, rgba(255,255,255,0.03) 1px, transparent 1px);
+      background-size: 40px 40px;
     }
   </style>
 </head>
 <body class="text-gray-300 font-sans">
 
-  <!-- NAVBAR -->
-  <header class="max-w-7xl mx-auto px-6 py-6 flex justify-between items-center">
-    <div class="text-xl font-semibold text-orange-400">&lt; Fazel /&gt;</div>
-    <nav class="space-x-4">
-      <a href="#" class="px-4 py-2 rounded bg-orange-500 text-black">Home</a>
-      <a href="#experience" class="px-4 py-2 rounded border border-gray-600 hover:border-orange-400">Experience</a>
-      <a href="#contact" class="px-4 py-2 rounded border border-gray-600 hover:border-orange-400">Contact</a>
-    </nav>
-  </header>
+<!-- Header -->
+<header class="max-w-6xl mx-auto px-6 py-6 flex justify-between items-center">
+  <div class="text-xl font-semibold text-orange-400">&lt;Fazel /&gt;</div>
+  <div class="space-x-4">
+    <a href="#experience" class="hover:text-orange-400">Experience</a>
+    <a href="#skills" class="hover:text-orange-400">Skills</a>
+    <a href="#contact" class="hover:text-orange-400">Contact</a>
+  </div>
+</header>
 
-  <!-- HERO -->
-  <section class="max-w-7xl mx-auto px-6 py-24">
-    <span class="inline-flex items-center gap-2 px-4 py-2 border border-gray-700 rounded-full text-sm mb-6">
-      <span class="w-2 h-2 bg-orange-400 rounded-full"></span>
-      Available for new opportunities
-    </span>
+<!-- Hero -->
+<section class="max-w-6xl mx-auto px-6 py-24">
+  <span class="inline-block mb-4 px-4 py-1 text-sm rounded-full bg-gray-800 text-orange-400">Available for new opportunities</span>
+  <h1 class="text-4xl md:text-6xl font-bold text-white mt-4">Hi, I'm <span class="text-orange-400">Fazel Shah</span></h1>
+  <h2 class="text-2xl md:text-3xl mt-4">DevOps & Cloud Security Lead</h2>
+  <p class="max-w-3xl mt-6 text-lg text-gray-400">
+    I design, secure, and operate scalable cloud platforms. Specialized in AWS, Kubernetes, CI/CD,
+    cloud security, and observability. I help teams ship reliably while staying compliant and secure.
+  </p>
+  <div class="mt-8 flex gap-4">
+    <a href="#contact" class="px-6 py-3 rounded-lg bg-orange-500 text-black font-medium">Get in Touch</a>
+    <a href="resume.pdf" class="px-6 py-3 rounded-lg border border-gray-600 hover:border-orange-400">Download Resume</a>
+  </div>
+</section>
 
-    <h1 class="text-5xl md:text-6xl font-bold mb-4">Hi, I’m <span class="text-orange-400">Fazel Shah</span></h1>
-    <h2 class="text-2xl md:text-3xl text-gray-400 mb-6">DevOps & Cloud Security Engineer</h2>
+<!-- Experience -->
+<section id="experience" class="max-w-6xl mx-auto px-6 py-20">
+  <h2 class="text-3xl font-bold text-white mb-12">Experience</h2>
 
-    <p class="max-w-2xl text-lg text-gray-400 mb-8">
-      I build and operate secure, scalable cloud infrastructure with a strong focus on automation,
-      reliability, and compliance. Experienced in AWS, Kubernetes, CI/CD, and security-first architectures.
-    </p>
-
-    <div class="flex gap-4">
-      <a href="#contact" class="px-6 py-3 bg-orange-500 text-black rounded-lg">Get in Touch</a>
-      <a href="resume.pdf" class="px-6 py-3 border border-gray-600 rounded-lg hover:border-orange-400">Download Resume</a>
-    </div>
-  </section>
-
-  <!-- ABOUT -->
-  <section class="max-w-7xl mx-auto px-6 py-20">
-    <h3 class="text-orange-400 mb-2">About Me</h3>
-    <h2 class="text-3xl font-semibold mb-6">Who I Am</h2>
-
-    <p class="max-w-3xl text-gray-400 leading-relaxed">
-      I’m a DevOps & Cloud Security Engineer with hands-on experience designing, deploying, and operating
-      production workloads on AWS. I focus on building resilient systems, automating deployments, improving
-      observability, and embedding security and compliance (ISO 27001, GDPR) into engineering workflows.
-      <br/><br/>
-      I enjoy solving complex infrastructure challenges—whether it’s Kubernetes ingress strategies,
-      CloudFront + S3 secure delivery, or cost optimization. Outside work, I enjoy cricket, gym workouts,
-      and following combat sports.
-    </p>
-  </section>
-
-  <!-- SKILLS -->
-  <section class="max-w-7xl mx-auto px-6 py-20">
-    <h3 class="text-orange-400 mb-2">Skills & Expertise</h3>
-    <h2 class="text-3xl font-semibold mb-8">Technologies I Work With</h2>
-
-    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-      <div class="border border-gray-700 rounded-lg p-6">AWS (EC2, EKS, S3, CloudFront, IAM)</div>
-      <div class="border border-gray-700 rounded-lg p-6">Kubernetes, Helm, Docker</div>
-      <div class="border border-gray-700 rounded-lg p-6">GitHub Actions, CI/CD</div>
-      <div class="border border-gray-700 rounded-lg p-6">NGINX & ALB Ingress Controllers</div>
-      <div class="border border-gray-700 rounded-lg p-6">New Relic, CloudWatch</div>
-      <div class="border border-gray-700 rounded-lg p-6">Security, ISO 27001, GDPR</div>
-    </div>
-  </section>
-
-  <!-- EXPERIENCE -->
-  <section id="experience" class="max-w-7xl mx-auto px-6 py-20">
-    <h3 class="text-orange-400 mb-2">Experience</h3>
-    <h2 class="text-3xl font-semibold mb-8">Work Experience</h2>
-
-    <div class="border border-gray-700 rounded-xl p-8 mb-6">
-      <h3 class="text-xl font-semibold">Cryptlex LLP</h3>
-      <p class="text-gray-400">DevOps & Security Engineer · April 2024 – Present · India</p>
-      <ul class="list-disc ml-6 mt-4 text-gray-400">
-        <li>Operate and secure production AWS & EKS infrastructure</li>
-        <li>Design CI/CD pipelines using GitHub Actions</li>
-        <li>Implement CloudFront + S3 secure file delivery</li>
-        <li>Support ISO 27001 & GDPR compliance initiatives</li>
-        <li>Optimize AWS costs and improve system reliability</li>
+  <div class="space-y-10">
+    <div>
+      <h3 class="text-xl font-semibold text-orange-400">Cryptlex LLP — DevOps & Security Lead</h3>
+      <p class="text-sm text-gray-400">Aug 2025 – Present</p>
+      <ul class="list-disc list-inside mt-3 space-y-2">
+        <li>Leading DevOps, cloud infrastructure, and security initiatives</li>
+        <li>Managing EKS clusters, Helm charts, GitHub Actions, and AWS services</li>
+        <li>Improving observability with Grafana, OpenTelemetry, and New Relic</li>
       </ul>
     </div>
 
-    <div class="border border-gray-700 rounded-xl p-8">
-      <h3 class="text-xl font-semibold">Additional Experience</h3>
-      <ul class="list-disc ml-6 mt-4 text-gray-400">
-        <li>Hands-on experience with production debugging and incident response</li>
-        <li>Migration of services behind VPN and secure networking</li>
-        <li>Cloud governance, IAM reviews, and access audits</li>
+    <div>
+      <h3 class="text-xl font-semibold text-orange-400">BQE Software — CloudOps Engineer</h3>
+      <p class="text-sm text-gray-400">Feb 2024 – Aug 2025</p>
+      <ul class="list-disc list-inside mt-3 space-y-2">
+        <li>AWS infrastructure operations and automation</li>
+        <li>Jenkins CI/CD pipelines and Ansible-based automation</li>
+        <li>Monitoring, alerting, and cost optimization</li>
       </ul>
     </div>
-  </section>
 
-  <!-- QUALIFICATIONS -->
-  <section class="max-w-7xl mx-auto px-6 py-20">
-    <h3 class="text-orange-400 mb-2">Qualifications</h3>
-    <h2 class="text-3xl font-semibold mb-8">Education & Certifications</h2>
+    <div>
+      <h3 class="text-xl font-semibold text-orange-400">GirnarCare — DevOps Engineer</h3>
+      <p class="text-sm text-gray-400">Aug 2022 – Feb 2024</p>
+      <ul class="list-disc list-inside mt-3 space-y-2">
+        <li>AWS to GCP migrations and Kubernetes platform design</li>
+        <li>CI/CD pipelines and observability dashboards</li>
+      </ul>
+    </div>
 
-    <ul class="space-y-4 text-gray-400">
-      <li>🎓 Bachelor’s Degree in Computer Science / IT</li>
-      <li>📜 Hands-on experience aligned with AWS & Kubernetes best practices</li>
-      <li>🔐 Practical experience in ISO 27001 and GDPR compliance</li>
-    </ul>
-  </section>
+    <div>
+      <h3 class="text-xl font-semibold text-orange-400">Tata Consultancy Services — System Engineer</h3>
+      <p class="text-sm text-gray-400">Feb 2022 – Aug 2022</p>
+      <ul class="list-disc list-inside mt-3 space-y-2">
+        <li>Linux administration, scripting, backups, and monitoring</li>
+      </ul>
+    </div>
 
-  <!-- CONTACT -->
-  <section id="contact" class="max-w-7xl mx-auto px-6 py-24 text-center">
-    <h2 class="text-3xl font-semibold mb-6">Let’s Work Together</h2>
-    <p class="max-w-xl mx-auto text-gray-400 mb-8">
-      I’m open to discussing new opportunities, cloud architecture challenges,
-      DevOps consulting, or security improvements.
-    </p>
+    <div>
+      <h3 class="text-xl font-semibold text-orange-400">Karvy Innotech — Associate</h3>
+      <p class="text-sm text-gray-400">Nov 2020 – Feb 2022</p>
+      <ul class="list-disc list-inside mt-3 space-y-2">
+        <li>Data center operations and infrastructure support</li>
+      </ul>
+    </div>
 
-    <a href="mailto:privacy@cryptlex.com" class="px-8 py-4 bg-orange-500 text-black rounded-lg">
-      Get in Touch
-    </a>
-  </section>
+    <div>
+      <h3 class="text-xl font-semibold text-orange-400">Antariksh Soft Tech — Network Support Executive</h3>
+      <p class="text-sm text-gray-400">Sep 2018 – Mar 2020</p>
+      <ul class="list-disc list-inside mt-3 space-y-2">
+        <li>Routing, switching, VLANs, and L1/L2 network support</li>
+      </ul>
+    </div>
+  </div>
+</section>
 
-  <footer class="text-center py-6 text-gray-500 text-sm">
-    © 2026 Fazel Shah. All rights reserved.
-  </footer>
+<!-- Skills -->
+<section id="skills" class="max-w-6xl mx-auto px-6 py-20">
+  <h2 class="text-3xl font-bold text-white mb-10">Skills & Technologies</h2>
+  <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+    <span class="skill">AWS</span><span class="skill">EKS</span><span class="skill">Terraform</span><span class="skill">Helm</span>
+    <span class="skill">GitHub Actions</span><span class="skill">Jenkins</span><span class="skill">Docker</span><span class="skill">Kubernetes</span>
+    <span class="skill">Grafana</span><span class="skill">OpenTelemetry</span><span class="skill">New Relic</span><span class="skill">Cloud Security</span>
+  </div>
+</section>
+
+<!-- Contact -->
+<section id="contact" class="max-w-6xl mx-auto px-6 py-24 text-center">
+  <h2 class="text-3xl font-bold text-white">Let's Work Together</h2>
+  <p class="mt-4 text-gray-400">
+    Available for new opportunities, freelance, and consulting.
+  </p>
+  <a href="mailto:privacy@cryptlex.com" class="inline-block mt-8 px-8 py-4 bg-orange-500 text-black rounded-lg font-medium">
+    Contact Me
+  </a>
+</section>
+
+<footer class="text-center py-8 text-gray-500">
+  © 2026 Fazel Shah. All rights reserved.
+</footer>
+
+<style>
+  .skill {
+    padding: 0.75rem;
+    text-align: center;
+    border: 1px solid #333;
+    border-radius: 0.5rem;
+    background: #1a1a1a;
+  }
+</style>
 
 </body>
 </html>
