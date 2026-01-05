@@ -3,249 +3,139 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Fazel Shah | DevOps & Security Lead</title>
+  <title>Fazel Shah – DevOps & Cloud Security Engineer</title>
+  <meta name="description" content="Fazel Shah – DevOps & Cloud Security Engineer | AWS, Kubernetes, CI/CD, Security & Compliance" />
 
-  <!-- SEO -->
-  <meta name="description" content="Fazel Shah – DevOps & Security Lead with expertise in AWS, Kubernetes, EKS, Helm, CI/CD, GitHub Actions, and Cloud Security." />
-  <meta name="keywords" content="DevOps Engineer, Cloud Engineer, AWS, Kubernetes, EKS, Helm, GitHub Actions, Security, SRE" />
-  <meta name="author" content="Fazel Shah" />
-
-  <!-- Google Analytics (replace GA_MEASUREMENT_ID later) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=GA_MEASUREMENT_ID"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);} 
-    gtag('js', new Date());
-    gtag('config', 'GA_MEASUREMENT_ID');
-  </script>
+  <!-- Tailwind CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
 
   <style>
-    :root {
-      --bg: #f8fafc;
-      --card: #ffffff;
-      --text: #0f172a;
-      --muted: #475569;
-      --accent: #2563eb;
-    }
-
     body {
-      margin: 0;
-      font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-      background: var(--bg);
-      color: var(--text);
-      line-height: 1.6;
-    }
-
-    .container {
-      max-width: 900px;
-      margin: auto;
-      padding: 32px 20px;
-    }
-
-    header {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      flex-wrap: wrap;
-      gap: 16px;
-    }
-
-    h1 {
-      font-size: 2.2rem;
-      margin: 0;
-    }
-
-    h2 {
-      margin-top: 40px;
-      border-bottom: 1px solid #1e293b;
-      padding-bottom: 8px;
-      color: var(--accent);
-    }
-
-    .tagline {
-      color: var(--muted);
-    }
-
-    .card {
-      background: var(--card);
-      border-radius: 14px;
-      padding: 24px;
-      margin-top: 24px;
-      border: 1px solid #e5e7eb;
-      box-shadow: 0 4px 16px rgba(0,0,0,0.05);
-    }
-
-    ul {
-      padding-left: 20px;
-    }
-
-    a {
-      color: var(--accent);
-      text-decoration: none;
-    }
-
-    .btn {
-      background: var(--accent);
-      color: #ffffff;
-      padding: 10px 18px;
-      border-radius: 999px;
-      font-weight: 600;
-      display: inline-block;
-    }
-
-    footer {
-      text-align: center;
-      margin-top: 60px;
-      color: var(--muted);
-      font-size: 0.9rem;
+      background-color: #1c1c1c;
+      background-image: radial-gradient(rgba(255,255,255,0.05) 1px, transparent 1px);
+      background-size: 24px 24px;
     }
   </style>
 </head>
-<body>
-  <a href="#main" class="skip">Skip to main content</a>
+<body class="text-gray-300 font-sans">
 
-  <main id="main" class="container">
-    <!-- HERO -->
-    <section class="card" style="margin-top:0">
-      <span style="color:#22c55e;font-weight:600">Available for new opportunities</span>
-      <h1 style="margin-top:12px">Hi, I'm Fazel Shah</h1>
-      <h3 class="tagline">DevOps & Security Lead</h3>
-      <p>
-        I design, automate, and secure cloud-native platforms.
-        Expert in building production-grade Kubernetes (EKS) environments,
-        CI/CD pipelines, and secure AWS infrastructure that scales reliably.
-      </p>
-      <p>
-        📧 <a href="mailto:fazelshah1@gmail.com">fazelshah1@gmail.com</a> · 📞 +91 7006073126 ·
-        <a href="https://www.linkedin.com/in/fazel-shah-397b2b113" target="_blank">LinkedIn</a> ·
-        <a href="https://github.com/fazelshah" target="_blank">GitHub</a>
-      </p>
-      <a class="btn" href="resume.pdf" download>Download Resume (PDF)</a>
-    </section>
+  <!-- NAVBAR -->
+  <header class="max-w-7xl mx-auto px-6 py-6 flex justify-between items-center">
+    <div class="text-xl font-semibold text-orange-400">&lt; Fazel /&gt;</div>
+    <nav class="space-x-4">
+      <a href="#" class="px-4 py-2 rounded bg-orange-500 text-black">Home</a>
+      <a href="#experience" class="px-4 py-2 rounded border border-gray-600 hover:border-orange-400">Experience</a>
+      <a href="#contact" class="px-4 py-2 rounded border border-gray-600 hover:border-orange-400">Contact</a>
+    </nav>
+  </header>
 
-    <!-- ABOUT -->
-    <section class="card">
-      <h2>About Me</h2>
-      <h3>Who I Am</h3>
-      <p>
-        I’m a DevOps & Security Lead with 6+ years of hands-on experience building,
-        automating, and securing cloud-native platforms. I specialize in running
-        production workloads on AWS and Kubernetes with a strong focus on
-        reliability, scalability, and security.
-      </p>
-      <p>
-        My core strengths include EKS, Helm, GitHub Actions, Terraform, and AWS
-        services. I enjoy solving complex infrastructure problems, improving
-        system observability, and designing CI/CD pipelines that are both fast
-        and secure.
-      </p>
-      <p>
-        Outside of work, I’m an active and disciplined individual. I enjoy
-        <b>playing cricket</b>, maintaining a consistent <b>gym and fitness routine</b>,
-        and participating as a <b>part-time volleyball player</b>. These activities
-        help me stay focused, energetic, and team-oriented—qualities I also bring
-        to my professional work.
-      </p>
-    </section>
+  <!-- HERO -->
+  <section class="max-w-7xl mx-auto px-6 py-24">
+    <span class="inline-flex items-center gap-2 px-4 py-2 border border-gray-700 rounded-full text-sm mb-6">
+      <span class="w-2 h-2 bg-orange-400 rounded-full"></span>
+      Available for new opportunities
+    </span>
 
-    <!-- VALUE -->
-    <section class="card">
-      <h2>What I Bring to the Table</h2>
-      <ul>
-        <li><b>Cloud & Kubernetes Expertise:</b> Deep experience with AWS, EKS, Helm, and containerized workloads.</li>
-        <li><b>CI/CD Automation:</b> Secure pipelines using GitHub Actions, Jenkins, Docker, and Kubernetes.</li>
-        <li><b>Security-First Mindset:</b> IAM least privilege, secrets management, TLS, audits, and SOC2 alignment.</li>
-        <li><b>Scalable Architecture:</b> Designing systems that grow without operational pain.</li>
-        <li><b>Fast Learner:</b> Adapt quickly to new tools, platforms, and security requirements.</li>
+    <h1 class="text-5xl md:text-6xl font-bold mb-4">Hi, I’m <span class="text-orange-400">Fazel Shah</span></h1>
+    <h2 class="text-2xl md:text-3xl text-gray-400 mb-6">DevOps & Cloud Security Engineer</h2>
+
+    <p class="max-w-2xl text-lg text-gray-400 mb-8">
+      I build and operate secure, scalable cloud infrastructure with a strong focus on automation,
+      reliability, and compliance. Experienced in AWS, Kubernetes, CI/CD, and security-first architectures.
+    </p>
+
+    <div class="flex gap-4">
+      <a href="#contact" class="px-6 py-3 bg-orange-500 text-black rounded-lg">Get in Touch</a>
+      <a href="resume.pdf" class="px-6 py-3 border border-gray-600 rounded-lg hover:border-orange-400">Download Resume</a>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="max-w-7xl mx-auto px-6 py-20">
+    <h3 class="text-orange-400 mb-2">About Me</h3>
+    <h2 class="text-3xl font-semibold mb-6">Who I Am</h2>
+
+    <p class="max-w-3xl text-gray-400 leading-relaxed">
+      I’m a DevOps & Cloud Security Engineer with hands-on experience designing, deploying, and operating
+      production workloads on AWS. I focus on building resilient systems, automating deployments, improving
+      observability, and embedding security and compliance (ISO 27001, GDPR) into engineering workflows.
+      <br/><br/>
+      I enjoy solving complex infrastructure challenges—whether it’s Kubernetes ingress strategies,
+      CloudFront + S3 secure delivery, or cost optimization. Outside work, I enjoy cricket, gym workouts,
+      and following combat sports.
+    </p>
+  </section>
+
+  <!-- SKILLS -->
+  <section class="max-w-7xl mx-auto px-6 py-20">
+    <h3 class="text-orange-400 mb-2">Skills & Expertise</h3>
+    <h2 class="text-3xl font-semibold mb-8">Technologies I Work With</h2>
+
+    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+      <div class="border border-gray-700 rounded-lg p-6">AWS (EC2, EKS, S3, CloudFront, IAM)</div>
+      <div class="border border-gray-700 rounded-lg p-6">Kubernetes, Helm, Docker</div>
+      <div class="border border-gray-700 rounded-lg p-6">GitHub Actions, CI/CD</div>
+      <div class="border border-gray-700 rounded-lg p-6">NGINX & ALB Ingress Controllers</div>
+      <div class="border border-gray-700 rounded-lg p-6">New Relic, CloudWatch</div>
+      <div class="border border-gray-700 rounded-lg p-6">Security, ISO 27001, GDPR</div>
+    </div>
+  </section>
+
+  <!-- EXPERIENCE -->
+  <section id="experience" class="max-w-7xl mx-auto px-6 py-20">
+    <h3 class="text-orange-400 mb-2">Experience</h3>
+    <h2 class="text-3xl font-semibold mb-8">Work Experience</h2>
+
+    <div class="border border-gray-700 rounded-xl p-8 mb-6">
+      <h3 class="text-xl font-semibold">Cryptlex LLP</h3>
+      <p class="text-gray-400">DevOps & Security Engineer · April 2024 – Present · India</p>
+      <ul class="list-disc ml-6 mt-4 text-gray-400">
+        <li>Operate and secure production AWS & EKS infrastructure</li>
+        <li>Design CI/CD pipelines using GitHub Actions</li>
+        <li>Implement CloudFront + S3 secure file delivery</li>
+        <li>Support ISO 27001 & GDPR compliance initiatives</li>
+        <li>Optimize AWS costs and improve system reliability</li>
       </ul>
-    </section>
+    </div>
 
-    <!-- SKILLS -->
-    <section class="card">
-      <h2>Skills & Technologies</h2>
-      <p>
-        AWS · EKS · Kubernetes · Helm · GitHub Actions · Jenkins · Docker · Terraform ·
-        Ansible · Linux · Git · IAM · VPC · Lambda · Grafana · New Relic · Lens
-      </p>
-    </section>
-
-    <!-- PROJECTS -->
-    <section class="card">
-      <h2>Key Projects</h2>
-      <ul>
-        <li><b>EKS Production Platform:</b> Designed highly available EKS clusters with ALB Ingress, IRSA, Helm deployments, and autoscaling.</li>
-        <li><b>CI/CD Platform:</b> Built GitHub Actions pipelines with security scanning, approvals, and Kubernetes rollouts.</li>
-        <li><b>Helm Standardization:</b> Created reusable Helm charts with environment-specific values for dev/stage/prod.</li>
-        <li><b>Security Hardening:</b> Implemented IAM reviews, secret rotation, audit logging, and TLS enforcement.</li>
+    <div class="border border-gray-700 rounded-xl p-8">
+      <h3 class="text-xl font-semibold">Additional Experience</h3>
+      <ul class="list-disc ml-6 mt-4 text-gray-400">
+        <li>Hands-on experience with production debugging and incident response</li>
+        <li>Migration of services behind VPN and secure networking</li>
+        <li>Cloud governance, IAM reviews, and access audits</li>
       </ul>
-    </section>
+    </div>
+  </section>
 
-    <!-- EXPERIENCE -->
-    <section class="card">
-      <h2>Experience</h2>
+  <!-- QUALIFICATIONS -->
+  <section class="max-w-7xl mx-auto px-6 py-20">
+    <h3 class="text-orange-400 mb-2">Qualifications</h3>
+    <h2 class="text-3xl font-semibold mb-8">Education & Certifications</h2>
 
-      <h3>Cryptlex LLP — DevOps & Security Lead</h3>
-      <p><i>Aug 2025 – Present</i></p>
-      <ul>
-        <li>Leading DevOps, cloud infrastructure, and security initiatives.</li>
-        <li>Managing EKS clusters, Helm charts, GitHub Actions, and AWS services.</li>
-        <li>Improving observability using Grafana, OpenTelemetry, and New Relic.</li>
-      </ul>
+    <ul class="space-y-4 text-gray-400">
+      <li>🎓 Bachelor’s Degree in Computer Science / IT</li>
+      <li>📜 Hands-on experience aligned with AWS & Kubernetes best practices</li>
+      <li>🔐 Practical experience in ISO 27001 and GDPR compliance</li>
+    </ul>
+  </section>
 
-      <h3>BQE Software — CloudOps Engineer</h3>
-      <p><i>Feb 2024 – Aug 2025</i></p>
-      <ul>
-        <li>AWS infrastructure operations and automation.</li>
-        <li>Jenkins pipelines, Ansible automation, and monitoring.</li>
-      </ul>
+  <!-- CONTACT -->
+  <section id="contact" class="max-w-7xl mx-auto px-6 py-24 text-center">
+    <h2 class="text-3xl font-semibold mb-6">Let’s Work Together</h2>
+    <p class="max-w-xl mx-auto text-gray-400 mb-8">
+      I’m open to discussing new opportunities, cloud architecture challenges,
+      DevOps consulting, or security improvements.
+    </p>
 
-      <h3>GirnarCare — DevOps Engineer</h3>
-      <p><i>Aug 2022 – Feb 2024</i></p>
-      <ul>
-        <li>AWS to GCP migrations and Kubernetes platform design.</li>
-        <li>CI/CD pipelines and observability dashboards.</li>
-      </ul>
+    <a href="mailto:privacy@cryptlex.com" class="px-8 py-4 bg-orange-500 text-black rounded-lg">
+      Get in Touch
+    </a>
+  </section>
 
-      <h3>TCS — System Engineer</h3>
-      <p><i>Feb 2022 – Aug 2022</i></p>
-      <ul>
-        <li>Linux administration, scripting, backups, and monitoring.</li>
-      </ul>
+  <footer class="text-center py-6 text-gray-500 text-sm">
+    © 2026 Fazel Shah. All rights reserved.
+  </footer>
 
-      <h3>Karvy Innotech — Associate</h3>
-      <p><i>Nov 2020 – Feb 2022</i></p>
-      <ul>
-        <li>Data center operations and infrastructure support.</li>
-      </ul>
-
-      <h3>Antariksh Soft Tech — Network Support Executive</h3>
-      <p><i>Sep 2018 – Mar 2020</i></p>
-      <ul>
-        <li>Routing, switching, VLANs, and L1/L2 network support.</li>
-      </ul>
-    </section>
-
-    <!-- EDUCATION -->
-    <section class="card">
-      <h2>Education</h2>
-      <h3>Bachelor of Technology (B.Tech) – Computer Science & Engineering</h3>
-      <p><i>Kashmir University · 2011 – 2015</i></p>
-      <p>CGPA: 7.00</p>
-    </section>
-
-    <!-- CTA -->
-    <section class="card">
-      <h2>Let's Work Together</h2>
-      <p>
-        I'm always open to discussing new projects, DevOps leadership roles,
-        cloud security improvements, or consulting opportunities.
-      </p>
-      <p style="color:#22c55e"><b>Available for new opportunities, freelance, and consulting.</b></p>
-    </section>
-
-    <footer>
-      © <script>document.write(new Date().getFullYear())</script> Fazel Shah · Hosted on GitHub Pages
-    </footer>
-  </main>
 </body>
 </html>
