@@ -3,21 +3,38 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
   <title>Fazel Shah | DevOps & Security Lead</title>
 
   <!-- SEO -->
-  <meta name="description" content="Fazel Shah – DevOps & Security Lead specializing in AWS, Kubernetes, DevOps automation, and ISO 27001 security compliance." />
-  <meta name="keywords" content="DevOps Engineer, Security Lead, AWS, Kubernetes, ISO 27001, CI/CD, Cloud Security" />
+  <meta name="description" content="Fazel Shah – DevOps & Security Lead specializing in AWS, Kubernetes, DevOps automation, and ISO 27001 compliance." />
   <meta name="author" content="Fazel Shah" />
 
   <!-- Tailwind -->
   <script src="https://cdn.tailwindcss.com"></script>
 
-  <!-- Animations -->
   <style>
     html { scroll-behavior: smooth; }
-    .fade-in { animation: fadeIn 0.8s ease-in-out both; }
+
+    body {
+      background: radial-gradient(circle at top, #0b1220, #020617 65%);
+    }
+
+    .glass {
+      background: rgba(15, 23, 42, 0.6);
+      backdrop-filter: blur(12px);
+      border: 1px solid rgba(148, 163, 184, 0.12);
+    }
+
+    .glow {
+      box-shadow:
+        0 0 0 1px rgba(56,189,248,.15),
+        0 0 40px rgba(56,189,248,.08);
+    }
+
+    .fade-in {
+      animation: fadeIn 0.8s ease-in-out both;
+    }
+
     @keyframes fadeIn {
       from { opacity: 0; transform: translateY(12px); }
       to { opacity: 1; transform: translateY(0); }
@@ -25,192 +42,161 @@
   </style>
 </head>
 
-<body class="bg-neutral-950 text-neutral-200 antialiased">
+<body class="text-slate-200 antialiased">
 
-<!-- NAV -->
-<header class="border-b border-neutral-800 sticky top-0 bg-neutral-950/90 backdrop-blur z-50">
-  <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
-    <div class="text-xl font-semibold">&lt;Fazel /&gt;</div>
-    <nav class="space-x-6 text-sm hidden md:block">
-      <a href="#about" class="hover:text-orange-400">About</a>
-      <a href="#skills" class="hover:text-orange-400">Skills</a>
-      <a href="#experience" class="hover:text-orange-400">Experience</a>
-      <a href="#education" class="hover:text-orange-400">Education</a>
-      <a href="#contact" class="hover:text-orange-400">Contact</a>
+<div class="min-h-screen flex">
+
+  <!-- SIDEBAR -->
+  <aside class="w-64 hidden md:flex flex-col p-6 glass">
+    <div class="text-xl font-semibold mb-10">&lt;Fazel /&gt;</div>
+
+    <nav class="space-y-4 text-sm">
+      <a href="#overview" class="hover:text-sky-400">Overview</a>
+      <a href="#skills" class="hover:text-sky-400">Skills</a>
+      <a href="#experience" class="hover:text-sky-400">Experience</a>
+      <a href="#education" class="hover:text-sky-400">Education</a>
+      <a href="#contact" class="hover:text-sky-400">Connect</a>
     </nav>
-  </div>
-</header>
 
-<!-- HERO -->
-<section class="max-w-6xl mx-auto px-6 py-24 fade-in">
-  <span class="inline-flex items-center gap-2 px-3 py-1 text-xs rounded-full bg-neutral-900 border border-neutral-800 mb-6">
-    <span class="w-2 h-2 bg-orange-400 rounded-full"></span>
-    Available for new opportunities
-  </span>
-
-  <h1 class="text-5xl md:text-6xl font-bold mb-4">
-    Hi, I’m <span class="text-orange-400">Fazel Shah</span>
-  </h1>
-
-  <h2 class="text-2xl md:text-3xl text-neutral-400 mb-6">
-    DevOps & Security Lead
-  </h2>
-
-  <p class="max-w-2xl text-neutral-400 leading-relaxed">
-    I design, secure, and scale cloud-native platforms with a strong focus on
-    AWS, Kubernetes, DevOps automation, and security compliance—helping teams
-    ship faster without compromising reliability or security.
-  </p>
-
-  <div class="mt-8 flex flex-wrap gap-4">
-    <a href="#contact" class="bg-orange-500 hover:bg-orange-600 text-black px-6 py-3 rounded-lg font-medium transition">
-      Get in Touch
-    </a>
-    <a href="https://www.linkedin.com/in/fazelshah" target="_blank"
-       class="border border-neutral-700 px-6 py-3 rounded-lg hover:border-orange-400 transition">
-      LinkedIn
-    </a>
-  </div>
-</section>
-
-<!-- ABOUT -->
-<section id="about" class="max-w-6xl mx-auto px-6 py-20 fade-in">
-  <h3 class="text-3xl font-semibold mb-6">About Me</h3>
-  <p class="max-w-3xl text-neutral-400 leading-relaxed">
-    I’m a DevOps & Security professional with hands-on experience across cloud infrastructure,
-    Kubernetes, CI/CD pipelines, and compliance frameworks.
-    I frequently act as the <strong>first point of contact</strong> for security,
-    audits, incidents, and platform reliability.
-    <br /><br />
-    Outside work, I enjoy playing cricket, training at the gym, and playing volleyball.
-  </p>
-</section>
-
-<!-- SKILLS -->
-<section id="skills" class="bg-neutral-900/40 py-20">
-  <div class="max-w-6xl mx-auto px-6">
-    <h3 class="text-3xl font-semibold mb-10">Skills & Technologies</h3>
-    <div class="grid grid-cols-2 md:grid-cols-4 gap-6 text-sm text-neutral-300">
-      <div>AWS (EC2, EKS, RDS, S3, IAM)</div>
-      <div>Kubernetes & Helm</div>
-      <div>GitHub Actions, Jenkins</div>
-      <div>Terraform & Ansible</div>
-      <div>Docker & Container Security</div>
-      <div>Grafana, OpenTelemetry</div>
-      <div>New Relic, CloudWatch</div>
-      <div>Linux & Networking</div>
+    <div class="mt-auto text-xs text-slate-400">
+      system.v2026.final
     </div>
-  </div>
-</section>
+  </aside>
 
-<!-- EXPERIENCE -->
-<section id="experience" class="max-w-6xl mx-auto px-6 py-20 fade-in">
-  <h3 class="text-3xl font-semibold mb-10">Experience</h3>
+  <!-- MAIN -->
+  <main class="flex-1 px-8 py-14 relative">
 
-  <div class="space-y-10 text-neutral-400">
+    <!-- PROFILE CARD -->
+    <div class="absolute top-14 right-10 hidden lg:block fade-in">
+      <div class="w-72 p-5 rounded-xl glass glow">
+        <img src="your-photo.jpg" alt="Fazel Shah"
+             class="rounded-lg mb-4" />
 
-    <div>
-      <h4 class="text-xl font-medium text-neutral-200">Cryptlex LLP — DevOps & Security Lead</h4>
-      <p class="text-sm">Aug 2025 – Present</p>
-      <ul class="list-disc list-inside mt-3 space-y-1">
-        <li>Leading DevOps, cloud infrastructure, and security initiatives</li>
-        <li>Primary point of contact for security incidents, audits, and compliance</li>
-        <li>Led ISO 27001 and GDPR compliance programs</li>
-        <li>Managing EKS clusters, Helm charts, GitHub Actions, and AWS services</li>
-        <li>Enhanced observability using Grafana, OpenTelemetry, and New Relic</li>
-      </ul>
-    </div>
-
-    <div>
-      <h4 class="text-xl font-medium text-neutral-200">BQE Software — CloudOps Engineer</h4>
-      <p class="text-sm">Feb 2024 – Aug 2025</p>
-      <ul class="list-disc list-inside mt-3 space-y-1">
-        <li>AWS infrastructure operations and automation</li>
-        <li>Jenkins pipelines and Ansible automation</li>
-      </ul>
-    </div>
-
-    <div>
-      <h4 class="text-xl font-medium text-neutral-200">GirnarCare — DevOps Engineer</h4>
-      <p class="text-sm">Aug 2022 – Feb 2024</p>
-      <ul class="list-disc list-inside mt-3 space-y-1">
-        <li>AWS to GCP migrations</li>
-        <li>Kubernetes platform design and CI/CD pipelines</li>
-      </ul>
-    </div>
-
-    <div>
-      <h4 class="text-xl font-medium text-neutral-200">Tata Consultancy Services — System Engineer</h4>
-      <p class="text-sm">Feb 2022 – Aug 2022</p>
-      <ul class="list-disc list-inside mt-3 space-y-1">
-        <li>Linux administration, scripting, monitoring, and backups</li>
-      </ul>
-    </div>
-
-    <div>
-      <h4 class="text-xl font-medium text-neutral-200">Karvy Innotech — Associate</h4>
-      <p class="text-sm">Nov 2020 – Feb 2022</p>
-      <ul class="list-disc list-inside mt-3 space-y-1">
-        <li>Data center operations and infrastructure support</li>
-      </ul>
-    </div>
-
-    <div>
-      <h4 class="text-xl font-medium text-neutral-200">Antariksh Soft Tech — Network Support Executive</h4>
-      <p class="text-sm">Sep 2018 – Mar 2020</p>
-      <ul class="list-disc list-inside mt-3 space-y-1">
-        <li>Routing, switching, VLANs, and L1/L2 support</li>
-      </ul>
-    </div>
-
-  </div>
-</section>
-
-<!-- CERTIFICATIONS -->
-<section id="education" class="bg-neutral-900/40 py-20">
-  <div class="max-w-6xl mx-auto px-6">
-    <h3 class="text-3xl font-semibold mb-8">Education & Certifications</h3>
-
-    <div class="flex items-center gap-6 mb-6">
-      <img src="https://d1.awsstatic.com/training-and-certification/certification-badges/AWS-Certified-Cloud-Practitioner_badge.3d3c07a1d4c6f4e0c26c92b69a9c43d5e6f8a3c1.png"
-           alt="AWS Certified Cloud Practitioner"
-           class="w-24 h-24" />
-      <div>
-        <p class="font-medium">AWS Certified Cloud Practitioner</p>
-        <p class="text-sm text-neutral-400">Amazon Web Services</p>
+        <div class="text-sm space-y-2">
+          <div class="flex items-center gap-2">
+            <span class="w-2 h-2 bg-emerald-400 rounded-full"></span>
+            <span>SYSTEM: OPTIMAL</span>
+          </div>
+          <div class="text-slate-400">LOC: India</div>
+          <div class="text-slate-400">ROLE: DevOps & Security Lead</div>
+          <div class="text-slate-400">UPTIME: 99.99%</div>
+        </div>
       </div>
     </div>
 
-    <ul class="list-disc list-inside text-neutral-400">
-      <li>Bachelor’s Degree in Computer Science</li>
-    </ul>
-  </div>
-</section>
+    <!-- OVERVIEW -->
+    <section id="overview" class="max-w-5xl fade-in">
+      <div class="flex items-center gap-3 mb-6">
+        <span class="w-2 h-2 bg-emerald-400 rounded-full"></span>
+        <span class="text-xs tracking-widest text-slate-400">
+          SENIOR DEVOPS & SECURITY ENGINEER
+        </span>
+      </div>
 
-<!-- CONTACT -->
-<section id="contact" class="max-w-6xl mx-auto px-6 py-20 fade-in">
-  <h3 class="text-3xl font-semibold mb-6">Let’s Work Together</h3>
-  <p class="max-w-2xl text-neutral-400 mb-8">
-    I’m open to full-time roles, consulting, and freelance engagements.
-    If you’re looking for someone who can own infrastructure, security,
-    and reliability end-to-end—let’s talk.
-  </p>
+      <h1 class="text-5xl font-bold mb-4">
+        Fazel <span class="text-sky-400">Shah</span>
+      </h1>
 
-  <div class="space-y-2">
-    <p>Email: <a href="mailto:fazelshah1@gmail.com" class="text-orange-400">fazelshah1@gmail.com</a></p>
-    <p>Phone: <span class="text-orange-400">+91 7006073126</span></p>
-    <p>LinkedIn:
-      <a href="https://www.linkedin.com/in/fazelshah" target="_blank" class="text-orange-400">
-        linkedin.com/in/fazelshah
-      </a>
-    </p>
-  </div>
-</section>
+      <p class="max-w-2xl text-slate-400 leading-relaxed">
+        I design, secure, and scale cloud-native platforms with a strong focus on
+        AWS, Kubernetes, DevOps automation, and security compliance—helping teams
+        ship faster without compromising reliability.
+      </p>
 
-<!-- FOOTER -->
-<footer class="border-t border-neutral-800 py-6 text-center text-sm text-neutral-500">
-  © 2026 Fazel Shah. All rights reserved.
-</footer>
+      <div class="mt-8 flex gap-4">
+        <a href="#contact"
+           class="px-6 py-3 rounded-lg bg-sky-500/10 text-sky-400 border border-sky-400/30 hover:bg-sky-500/20 transition glow">
+          Get in Touch
+        </a>
+        <a href="https://www.linkedin.com/in/fazelshah" target="_blank"
+           class="px-6 py-3 rounded-lg border border-slate-700 hover:border-sky-400 transition">
+          LinkedIn
+        </a>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills" class="max-w-5xl mt-24 fade-in">
+      <h2 class="text-3xl font-semibold mb-8">Skills</h2>
+
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-4 text-sm">
+        <div class="glass p-4 rounded-lg">AWS & EKS</div>
+        <div class="glass p-4 rounded-lg">Kubernetes & Helm</div>
+        <div class="glass p-4 rounded-lg">Terraform & Ansible</div>
+        <div class="glass p-4 rounded-lg">CI/CD Pipelines</div>
+        <div class="glass p-4 rounded-lg">Cloud Security</div>
+        <div class="glass p-4 rounded-lg">ISO 27001 / GDPR</div>
+        <div class="glass p-4 rounded-lg">Observability</div>
+        <div class="glass p-4 rounded-lg">Linux & Networking</div>
+      </div>
+    </section>
+
+    <!-- EXPERIENCE -->
+    <section id="experience" class="max-w-5xl mt-24 fade-in">
+      <h2 class="text-3xl font-semibold mb-10">Experience</h2>
+
+      <div class="space-y-8 text-slate-400">
+
+        <div class="glass p-6 rounded-xl">
+          <h3 class="text-xl text-slate-200">Cryptlex LLP — DevOps & Security Lead</h3>
+          <p class="text-sm">Aug 2025 – Present</p>
+          <ul class="list-disc list-inside mt-3 space-y-1">
+            <li>Leading cloud, DevOps, and security initiatives</li>
+            <li>Primary POC for audits, incidents, and compliance</li>
+            <li>ISO 27001 & GDPR ownership</li>
+          </ul>
+        </div>
+
+        <div class="glass p-6 rounded-xl">
+          <h3 class="text-xl text-slate-200">BQE Software — CloudOps Engineer</h3>
+          <p class="text-sm">Feb 2024 – Aug 2025</p>
+          <ul class="list-disc list-inside mt-3 space-y-1">
+            <li>AWS operations & automation</li>
+            <li>Jenkins & Ansible pipelines</li>
+          </ul>
+        </div>
+
+        <div class="glass p-6 rounded-xl">
+          <h3 class="text-xl text-slate-200">GirnarCare — DevOps Engineer</h3>
+          <p class="text-sm">Aug 2022 – Feb 2024</p>
+          <ul class="list-disc list-inside mt-3 space-y-1">
+            <li>Cloud migrations & Kubernetes platforms</li>
+          </ul>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- EDUCATION -->
+    <section id="education" class="max-w-5xl mt-24 fade-in">
+      <h2 class="text-3xl font-semibold mb-8">Education & Certifications</h2>
+
+      <div class="glass p-6 rounded-xl">
+        <p class="font-medium">AWS Certified Cloud Practitioner</p>
+        <p class="text-sm text-slate-400">Amazon Web Services</p>
+        <p class="mt-4 text-slate-400">Bachelor’s Degree in Computer Science</p>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="max-w-5xl mt-24 fade-in">
+      <h2 class="text-3xl font-semibold mb-6">Let’s Work Together</h2>
+      <p class="text-slate-400 mb-6">
+        Open to full-time roles, consulting, and freelance engagements.
+      </p>
+
+      <div class="space-y-2 text-slate-400">
+        <p>Email: <a href="mailto:fazelshah1@gmail.com" class="text-sky-400">fazelshah1@gmail.com</a></p>
+        <p>Phone: <span class="text-sky-400">+91 7006073126</span></p>
+      </div>
+    </section>
+
+    <footer class="mt-24 text-center text-sm text-slate-500">
+      © 2026 Fazel Shah — All systems operational
+    </footer>
+
+  </main>
+</div>
 
 </body>
 </html>
